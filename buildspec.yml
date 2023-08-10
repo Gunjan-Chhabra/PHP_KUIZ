@@ -1,0 +1,21 @@
+version: 0.0
+
+phases:
+  install:
+    runtime-versions:
+        php: 8.1.2
+    commands:
+      - echo install
+  pre_build:
+    commands:
+      - echo pre build
+  build:
+    commands:
+      - echo build
+
+  post_build:
+    commands:
+      - echo post build
+artifacts:
+  files:
+      - '**/*'
